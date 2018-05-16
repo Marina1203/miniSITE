@@ -10,7 +10,7 @@
 }
 
 .fond_rouge {
-    background: red;
+    background: rosybrown;
 }
 
 .fond_vert {
@@ -18,7 +18,7 @@
 }
 
 .fond_bleu {
-    background: blueviolet;
+    background: royalblue;
 }
 .fond_jaune {
     background: yellow;
@@ -41,14 +41,16 @@ body {
 }
 /* le haut de page */
 header {
-    height: 230px;
+    background:  url(../img/panorama1.jpg) center center no-repeat;
+    height: 472px;
     border: 5px solid white;
 }
     
 /* le contenu principal */
 #main {
-    width: 700px;
+    width: 680px;
     float: right;
+    padding: 10px;
 }
 /* la classe de remettre tout dans le flux normal */
 .clear {
@@ -57,8 +59,10 @@ header {
 }
     /* le cote de la page */
     aside {
-        width: 300px;
+        width: 280px;
         float: left;
+        padding: 10px
+        
     
 }
 /* le pied de la page */
