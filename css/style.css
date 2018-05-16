@@ -27,6 +27,44 @@
 /* les styles de la page */
 
 body {
-    background-color: bisque;
+    margin: auto;
+    background-color: olivedrab;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+/* l'emballage de toute la page */
+#wrapper{ 
+    width: 1000px;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+/* le haut de page */
+header {
+    height: 230px;
+    border: 5px solid white;
+}
+    
+/* le contenu principal */
+#main {
+    width: 700px;
+    float: right;
+}
+/* la classe de remettre tout dans le flux normal */
+.clear {
+    clear: both;
+
+}
+    /* le cote de la page */
+    aside {
+        width: 300px;
+        float: left;
+    
+}
+/* le pied de la page */
+
+footer {
+    height: 230px;
+    border: 5px solid peru;
+}
+

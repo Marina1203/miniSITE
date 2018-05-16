@@ -10,28 +10,51 @@
     </head>
     <body>
         <!-- début de la div principale -->
-        <div>
+        <div id="wrapper">   <!-- contenu envelopp -->
+          
             <!-- des nouveautés du HTML 5 -->
             <!-- en tete de la page -->
             <header class="fond_vert"><h1>En tete de la page</h1>
             <p>Avec un peu de texte</p>
         <p>Avec un peu de texte dans un autre paragraphe</p></header>
-            <!-- la navigation de la page -->
-            <nav class="fond_rouge">Navigation
-                <ul>
-                    <li>Menu 01</li>
-                    <li>Menu 02</li>  
-                    <li>Menu 03</li>    
-                    <li>Menu 04</li>      
-                </ul>
-            </nav>
-            <!-- du contenu textuel -->
-            <article class="fond_orange">Contenu textuel</article>
-            <!-- pour une division sur le coté de la page -->
-            <aside class="fond_jaune">Le coté de la page</aside>
+         <!-- pour une division sur le coté de la page -->
+         <aside class="fond_jaune">
+                <h2>Bienvenue</h2>
+                 <!-- la navigation de la page -->
+            <nav class="fond_rouge">
+                    <h2>Navigation
+                    <ul>
+                        <li>Menu 01 </li>
+                        <li>Menu 02 </li>  
+                        <li>Menu 03 </li>    
+                        <li>Menu 04 </li>    
+                        <li>Menu 05 </li>
+                        <li>Menu 06 </li>  
+                        <li>Menu 07 </li>    
+                        <li>Menu 08 </li>   
+                    </ul></h2>
+                </nav>Le coté de la page</aside>
+
+        <div id="main">   <!-- contenu principal  -->
+          
+           <!-- un article avec son h2 -->
+        
+            <article class="fond_orange">
+                <h2>Titre d'un article </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sapiente eaque nobis adipisci deleniti sint possimus praesentium, exercitationem pariatur impedit maiores. Cum minus quasi provident hic, voluptatibus sunt ea est.
+                     </p>
+                     <p class="fond_rouge">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea nihil deserunt dignissimos, facere eos laudantium, cumque architecto recusandae aut officia omnis quae impedit praesentium minus magni labore ut odit? Aut!</p>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In eius dolor adipisci eveniet, laudantium ducimus perspiciatis similique iste quibusdam nobis iusto! Quod beatae enim distinctio eos, explicabo incidunt quas totam.</p>
+
+                <p class="fond_jaune"> Je suis le <span class="fond_rouge"> plus fort</span></p>
+            </article>
+        </div> <!-- fermeture de la div main -->
+        <div class="clear"></div>
+           
 
             <!-- le pied de la page -->
            <footer class="fond_bleu">Pied de la page</footer> 
+           <!-- fermeture div wrapper -->
         </div>
     </body>
 </html>
