@@ -6,7 +6,7 @@
 /* des styles simples pour visualiser les div */
 
 .fond_orange {
-    background: orange;
+    background: salmon;
 }
 
 .fond_rouge {
@@ -69,6 +69,46 @@ header {
 
 footer {
     height: 230px;
-    border: 5px solid peru;
+    border: 5px solid salmon;
+}
+/* le formulaire  sur le CSS */
+form {
+    background: wheat;
+    padding: 10px;
+}
+
+fieldset{
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid seagreen;
+    width: 80%;
+
+}
+legend{
+    font-weight: 800;
+    color: slategrey;
+
+}
+label{
+    background-color: skyblue;
+    color: teal;
+    margin-top: 10px;
+    display: block;/*  display:block permet d'aller à la ligne automatiquement */
+    width: 300px;
+}
+label.inline {
+    /* tous les labels qui ont une class inline */
+    display: inline;
+    margin-right: 70px;
+}
+input, textarea, select {
+    /* pour styler plusieurs elements et leur donner des attributs communs */
+    border: 1px solid springgreen;
+    padding: 3px;
+    box-shadow: 2px 5px 2px sienna;
+    margin-top: 10px;
+}
+select {
+    margin-top: 10px;
 }
 

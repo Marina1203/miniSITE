@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <title>miniSITE: formulaire</title>
+        <!-- la feuille de style externe -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- début de la div principale -->
+        <div id="wrapper">   <!-- contenu envelopp -->
+          
+            <!-- des nouveautés du HTML 5 -->
+            <!-- en tete de la page -->
+            <header><h1><a href="index.html"> MiniSite de Marina</a> </h1>
+            </header>
+         <!-- pour une division sur le coté de la page -->
+         <aside class="fond_jaune">
+                <h1>Bienvenue</h1>
+                 <!-- la navigation de la page -->
+            <nav class="fond_rouge">
+                    <h2>Navigation</h2>
+             <ul>
+                        <li><a href="index.html" title="Minisite:accueil">Accueil</a></li>
+                        <li><a href="photos.html" title="Minisite:des photos" >Photos</a></li>  
+                        <li><a href="textes.html" title="Minisite:des textes" >Textes</a></li>    
+                        <li><a href="formulaires.html" title="Minisite:des formulaires" >Formulaires</a></li>    
+                        <li><a href="tableau.html" title="MiniSite: un tableau" >Tableau</a></li> 
+                        <li><a href="#" title="MiniSite:" >Menu 06</a></li> 
+                        <li><a href="#" title="MiniSite:" >Menu 07</a></li>
+                        <li><a href="#" title="MiniSite:" >Menu 08</a></li>
+                    
+             </ul>
+             </nav>Le coté de la page</aside>
+
+        <div id="main" class="fond_orange">   <!-- contenu principal  -->
+          
+           <!-- un article avec son h2 -->
+        
+          
+                <h1>Un premier formulaire  HTML  </h1>
+                <!-- Je declare un formulaire avec une balise form -->
+                <form>
+                    <label for="pseudo">Votre pseudo *</label><!--  une etiquette pour le premier champ du formulaire -->
+                    <!-- le premier champ du formulaire du texte-->
+                    <input type="text" name="pseudo" id="pseudo" placeholder="rentrez votre pseudo" required>
+                    <label for="password">Mot de passe *</label><!-- input et label pour un mot de passe -->
+                    <input type="password" name="mdp" id="mdp" placeholder="Rentrez votre mot de passe" required><br> <!-- input et label pour le courriel -->
+                    <label for="email">Votre courriel *</label>
+                    <input type="email" name="email" id="email" placeholder="Votre courriel" required>
+
+                    <!-- bouton pour envoyer le formulaire -->
+                    <input type="submit" name="inscription" value="Envoyer"> -
+                     <input type="reset" name="annulation" value="Annuler">
+                
+                    </form>
+                <hr>
+                <h2>Un petit <em>sondage</em></h2>
+               <p> <small>Un autre formulaire</small></p>
+                <form action="toto.php" method="POST">
+                 <fieldset>
+                      <legend>A propos du CSS :</legend>
+                     <p> Savez vous ce que veut dire <strong>CSS</strong> ?:</p>
+                        <!-- des boutons radio le premier est coché -->
+                        <input type="radio" name="CSS" value="oui" checked>
+                        <label for="oui" class="inline">Oui</label>
+                        <input type="radio" name="CSS" value="non">
+                        <label for="non" class="inline">Non</label><br>
+                        
+
+                        <label for="utilise">Si oui, vous en servez-vous? :</label>
+                        <!-- select un menu deroulant avec ses options -->
+                        <select name="utilise">
+                            <option value="toujours">toujours</option>
+                            <option value="parfois">parfois</option>
+                            <option value="jamais">jamais</option>
+
+                        </select>
+                 </fieldset>
+                 <fieldset>
+                     <legend>Vos coordonnées :</legend>
+                     <label for="email">Votre courriel *</label>
+                     <input type="email" name="email" size="25" 
+                     placeholder="Votre courriel" required>
+                     <label for="commentaire">Donnez-nous votre avis : *</label>
+                     <textarea name="commentaire" cols="30" rows="4" placeholder="Donnez votre avis sur les CSS" required>
+
+                     </textarea>
+
+                 </fieldset>
+                 <legend>Envoyez votre réponse :</legend>
+                 <p>
+                     <input type="submit" name ="envoyez" value="Envoyez votre réponse">
+                     <input type="reset" name="annulez" value="Annuler">
+                 </p>
+
+                </form>
+             
+           
+        </div> <!-- fermeture de la div main -->
+        <div class="clear"></div>
+           
+
+            <!-- le pied de la page -->
+           <footer class="fond_bleu">Pied de la page</footer> 
+           <!-- fermeture div wrapper -->
+        </div>
+    </body>
+</html>
+
+
