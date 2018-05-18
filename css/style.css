@@ -6,11 +6,12 @@
 /* des styles simples pour visualiser les div */
 
 .fond_orange {
-    background: salmon;
+    background: linear-gradient( salmon, white)
 }
 
+
 .fond_rouge {
-    background: rosybrown;
+    background: linear-gradient( turquoise, wheat,#DB074D)
 }
 
 .fond_vert {
@@ -18,22 +19,22 @@
 }
 
 .fond_bleu {
-    background: royalblue;
+    background: linear-gradient( salmon, royalblue, white) 
 }
 .fond_jaune {
-    background: yellow;
+background: repeating-linear-gradient( chartreuse 10%, yellowgreen 40%, yellow 50%) 
 }
 
 /* les styles de la page */
 
 body {
     margin: auto;
-    background-color: olivedrab;
+    background: radial-gradient( palevioletred,#CB0AFA, #FF8786 );
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 /* l'emballage de toute la page */
 #wrapper{ 
-    width: 1000px;
+    width: 1200px;
     margin-top: 20px;
     margin-right: auto;
     margin-left: auto;
@@ -41,14 +42,15 @@ body {
 }
 /* le haut de page */
 header {
-    background:  url(../img/panorama1.jpg) center center no-repeat;
+  /*   background:  url(../img/panorama1.jpg) center center no-repeat; */
+  background:  url(../img/panorama1.jpg) center center no-repeat, linear-gradient(skyblue, springgreen, white);
     height: 472px;
     border: 5px solid white;
 }
     
 /* le contenu principal */
 #main {
-    width: 680px;
+    width: 880px;
     float: right;
     padding: 10px;
 }
@@ -68,12 +70,13 @@ header {
 /* le pied de la page */
 
 footer {
-    height: 230px;
-    border: 5px solid salmon;
+    height: 150px;
+    border: 5px solid #0C40EB;
+    margin-bottom: 10px;
 }
 /* le formulaire  sur le CSS */
 form {
-    background: wheat;
+    background: teal;
     padding: 10px;
 }
 
@@ -82,11 +85,13 @@ fieldset{
     margin-bottom: 20px;
     border: 1px solid seagreen;
     width: 80%;
+    font-style: italic;
 
 }
 legend{
     font-weight: 800;
     color: slategrey;
+    
 
 }
 label{
@@ -95,6 +100,7 @@ label{
     margin-top: 10px;
     display: block;/*  display:block permet d'aller à la ligne automatiquement */
     width: 300px;
+    
 }
 label.inline {
     /* tous les labels qui ont une class inline */
@@ -105,10 +111,52 @@ input, textarea, select {
     /* pour styler plusieurs elements et leur donner des attributs communs */
     border: 1px solid springgreen;
     padding: 3px;
-    box-shadow: 2px 5px 2px sienna;
+    box-shadow: 2px 5px 2px #0C40EB;
     margin-top: 10px;
 }
 select {
     margin-top: 10px;
+
+}
+
+/* le tableau */
+table{
+    border-collapse: collapse; /* fusillone les bordures stylées ci-après */
+}
+
+table,th,td {
+    border: 1px solid wheat;
+}
+th,td {
+    padding: 5px;
+}
+tr:hover { /* une pseudo class : hover pour passage de courseur */
+    background-color: yellowgreen;
+}
+th, tfoot {
+    text-align: left;
+    background: orchid;
+    color: teal;
+
+}
+
+caption {
+    caption-side: bottom;
+    border: 3px solid;
+    color: #355DFA;
+    padding: 12px;
+    text-transform: lowercase;
+
+
+}
+/* différentes styles de bordures */
+.filetgauche { /* un filet en haut a gauche */
+    border-left: 6px solid blueviolet;
+    border-bottom: 10px darkmagenta solid;
+}
+.cartouche { /* un essai de bordure avec les coins arrondis */
+border: 5px solid rgb(21, 11, 165);
+border-radius: 50px;
+padding: 25px;
 }
 
