@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>miniSITE: float</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- la feuille du style externe avec une balise link -->
+    <!-- <link href="css:style.css" rel="stylesheet"> -->
+   <style> /* les styles pour l'exercice du float */
+body {
+    margin: 0 auto;
+    background-color: mediumvioletred;
+}
+p {
+    background-color: teal;
+    width: 40%;
+}
+/* toutes les dives de la page */
+div {
+    width: 70%;
+    margin: 0 auto;
+    background-color: aqua;
+}
+/* la class boite qui contient des images et que l'on fait floter */
+.boite {
+    height: 11vh;
+    width: 20vh ;
+    padding: 5vh;
+    margin: 2vh;
+    border: 10px double turquoise; 
+    background: url(img/siamois.jpg);
+    background-repeat: no-repeat;
+    float: left;
+   }
+   .boite:hover { /* la pseudo-class hover modifie un affichage au survol de la souris */
+       border: 5px double dodgerblue;
+   }
+   .clear {
+       clear: both;
+   }
+</style>
+</head>
+<body>
+    <h1> Le float: introduction aux types de balises, block et inline</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima pariatur quas, exercitationem vero quo praesentium laudantium magnam similique blanditiis culpa repellendus fuga aliquid tempore porro ipsam eos corporis consequuntur! Repudiandae.</p>
+    <ul>
+        <li>Les elements du type <strong> block </strong> <em> bloc </em>(h1, p,ul,ol,table, bloquote,etc)</li>
+        <li>Les elements du type <strong> inline</strong> <em> en-ligne</em> (a,img,strong,abbr, etc)</li>
+    </ul>
+    <hr>
+    <div>
+        <div class="boite">1</div>
+        <div class="boite">2</div>
+        <div class="boite">3</div>
+        <div class="boite">4</div>
+        <div class="boite">5</div>
+        <div class="boite">6</div>
+        <div class="boite">7</div>
+        <div class="boite">8</div>
+    </div>
+    <hr>
+    <p class="clear">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, voluptate, voluptatibus porro debitis ipsum laboriosam similique laborum odio ducimus expedita nemo molestias, laudantium sapiente necessitatibus vel quis unde et sequi.</p>
+    
+</body>
+</html>

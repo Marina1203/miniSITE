@@ -1,0 +1,76 @@
+@charset "utf-8";
+/* CSS document */
+/* ma deuxième feuille de style externe */
+/* des styles simples pour visualiser les div */
+
+body {
+    /*  margin: 0 auto; */
+     background-color: white;
+ }
+/* pour alterner des couleurs des div */
+.vert {
+    background-color:green;
+    height: 8em;
+    width: 8em;
+    border: 0.2em solid black;
+    border-radius: 5% 15% 30% 40% ;
+    text-align: center;
+    float: left;
+    margin: 0.5em;
+}
+.bleu {
+    background-color: aqua;
+    height: 8em;
+    width: 8em;
+    border: 0.2em solid black;
+    border-radius: 40% 0% 40% 0% ;
+    text-align: center;
+    float: left;
+    margin: 0.5em;
+}
+.vertpale {
+    background-color: lightgreen;
+    height: 8em;
+    width: 8em;
+    border: 0.2em solid black;
+    border-radius: 5em;
+    text-align: center;
+    float: left;
+    margin: 0.5em;
+}
+.rose {
+    background-color: rosybrown;
+    height: 8em;
+    width: 8em;
+    border: 0.2em solid black;
+    border-radius: 15% 40% 15% 40% ;
+    text-align: center;
+    float: left;
+    margin: 0.5em;
+}
+.rouge {
+    background-color: red;
+    height: 8em;
+    width: 8em;
+    border: 0.2em solid black;
+    border-radius: 15% 40% 15% 40% ;
+    text-align: center;
+    float: left;
+    margin: 0.5em;
+}
+.white {
+    background-color: white;
+    height: 8em;
+    width: 8em;
+    float: left;
+    margin: 0.5em;
+}
+
+
+/* les styles communs aux div de la page */
+
+.clear {
+    clear: both;
+}
+
+

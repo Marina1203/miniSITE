@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS document */
+/* ma deuxième feuille de style externe */
+/* des styles simples pour visualiser les div */
+
+body {
+    /*  margin: 0 auto; */
+     background-color: lightgreen;
+ }
+/* pour alterner des couleurs des div */
+.bleu {
+    background-color: aqua;
+}
+.violet {
+    background-color: darkorchid;
+}
+/* les styles communs aux div de la page */
+.c1, .c2 {
+    height: 10em;
+    width: 10em;
+    border: 0.2em solid yellow;
+    float: left;
+    /* border-radius: 20em; */
+    border-radius: 100% 5% 100% 20% ;
+    text-align: center;
+    
+}
+.clear {
+    clear: both;
+}
+
+
