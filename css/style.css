@@ -6,7 +6,7 @@
 /* des styles simples pour visualiser les div */
 
 .fond_orange {
-    background: linear-gradient( salmon, white)
+    background: linear-gradient( salmon, greenyellow)
 }
 
 
@@ -18,9 +18,9 @@
     background: greenyellow;
 }
 
-.fond_bleu {
+/* .fond_bleu {
     background: linear-gradient( salmon, royalblue, white) 
-}
+} */
 .fond_jaune {
 background: repeating-linear-gradient( chartreuse 10%, yellowgreen 40%, yellow 50%) 
 }
@@ -47,8 +47,41 @@ header {
     height: 472px;
     border: 5px solid white;
 }
-    
+header h1 {
+    background-color: bisque;
+    text-transform: uppercase;
+    width: 20%;
+    text-align: center;
+    margin-left: 10%;
+}
+header h1 a {
+    text-decoration: none;
+    color: #FF8786;
+}
+header h1 a:hover {
+    background-color: aqua;
+    color: red;
+}
+/*  nav ul li {
+     list-style-type: none;
+     list-style-image: url(../img/globe_fleche.png);
+ }  */  
+
+/*   ou créer id #pasdepuces {
+     list-style-type: none;
+
+ } */
 /* le contenu principal */
+#nchild tr:nth-child(2n+1) {
+    background: lightseagreen;
+    color: azure;
+}
+
+#puceballon {
+    list-style-type: none;
+    list-style-image: url(../img/globe_fleche.png)
+}
+
 #main {
     width: 880px;
     float: right;
@@ -159,4 +192,30 @@ border: 5px solid rgb(21, 11, 165);
 border-radius: 50px;
 padding: 25px;
 }
-
+/* les pseudo class */
+/* quand le lien n'est pas visité  */
+a {
+    text-decoration: none;
+}
+a:link {
+    color: red;
+}
+/* quand le lien a été  visité */
+a:visited {
+    color: #0C40EB;
+}
+/* au survol de la souris je mets un fond de couleur et je souligne les liens */
+a:hover {
+    color: white;
+    background: green;
+    text-decoration: underline;
+}
+/* ici pour l' astuce au survol dans la page texte */
+#survol p {
+    display: none;
+    background-color: aqua;
+    padding: 20px;
+}
+#survol:hover p {
+    display: block ;
+}

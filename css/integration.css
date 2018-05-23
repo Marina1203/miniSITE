@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* CSS document */
+/* ma cinqième feuille de style */
+body {
+     background-color:   #dea ;
+   /*  background: -webkit-repeating-linear-gradient( palevioletred, blanchedalmond); */
+    font-family: 'PT Sans', sans-serif;
+      color: darkslategray;
+    margin: 10px 0;
+    padding: 0;
+    text-align: center;
+}
+#conteneur {
+    width: 770px; /* largeur en px de l'id conteneur */
+    margin: 0 auto; /* marge automatique qui centre la div après l'avoir remontée le plus haut possible */
+    border: 2px solid #ab4; /* bordure exterieure */
+    background: #fff;
+    text-align: left;
+}
+#header h1 {
+    height: 250px;
+    background-color: #ccff99;
+    
+}

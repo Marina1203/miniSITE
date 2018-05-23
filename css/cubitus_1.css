@@ -20,9 +20,10 @@ body {
     width: 10em;
     border: 0.2em solid yellow;
     float: left;
-    /* border-radius: 20em; */
-    border-radius: 100% 5% 100% 20% ;
+    border-radius: 20em;
+   /*  border-radius: 100% 5% 100% 20% ; */
     text-align: center;
+ /*    display: inline-block; remplace le class .clear */
     
 }
 .clear {
@@ -30,3 +31,7 @@ body {
 }
 
 
+
+ .c1:hover,.c2:hover {
+    background-color: blue;
+} 
