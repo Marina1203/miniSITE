@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <title>miniSITE: Marinazoning1 </title>
+    
+    <style>
+        body {
+            background:radial-gradient( rgb(0, 89, 255) ,white );
+        }
+       
+        #conteneur {
+    width: 1000px;
+    margin: 0 auto;
+}
+header { 
+    background-color: mediumorchid;
+    height: 80px;
+    text-align: center;
+    padding: 20px;
+    border-top-right-radius: 5em;
+    border-top-left-radius: 5em;
+    font-family: fantasy;
+    border-top: 5px solid rgb(0, 89, 255);
+ 
+}
+nav {
+    background-color: seagreen; 
+    height: 50px;
+    text-align: center;
+    border: 1px solid #000;
+}
+section {
+    background-color: royalblue;
+    height: 500px;
+
+}
+footer {
+    background-color: rgb(0, 255, 0);
+    height: 100px;
+    text-align: center;
+    padding-top: 20px;
+    border-bottom-left-radius: 5em;
+    border-bottom-right-radius: 5em;
+    border-bottom: 5px solid blue;
+}
+/* .fond_rouge {
+    background: red;
+}
+.fond_jaune {
+    background: yellowgreen;
+
+}
+.fond_violet {
+    background: maroon;
+}
+.fond_bleu {
+    background: blue;
+} */
+.image {/* je n'ai pas utilisé cet option */
+    background: url('img/bali.jpg') no-repeat center;
+    background-size: cover ; /* permet de couvrir tout l'espace  */ 
+}
+.a,.b,.c,.d {
+    width: 497px;
+    height: 250px;
+    float: left;
+    border: 1px solid black;
+}
+.ab {
+    width: 246px;
+    height: 124px;
+    float: left;
+    text-align: center;
+    font-size: 1.5em; 
+    font-weight: bold;
+    border: 0.5px solid black;
+
+}
+ .abc {
+    width: 118px;
+    height: 60px;
+    float: left;
+    text-align: center;
+    font-size: 1.5em; 
+    font-weight: bold; 
+    border: 2px solid blue;
+} 
+.da {
+    width: 160px;
+    height: 250px;
+    float: left;
+    border:2.5px solid black;
+}
+.a {
+    background-color: aqua;
+
+}
+.b {
+    background-color: salmon;
+}
+.c {
+    background-color: seagreen;
+}
+.d {
+    background-color: palevioletred;
+}
+.clear {
+    clear: both;
+}
+
+    </style>
+    </head>
+<body>
+    <div id="conteneur">
+        <header>Zone du haut</header>
+        <nav> menu</nav>
+        <section>
+            <div class="a"> <img src="img/canaletto-grand-canal1.jpg" alt=""></div> 
+                    <div class="b">
+                        <div class="ab"><img src="img/bali.jpg" alt=""></div>
+                        <div class="ab"><img src="img/bali.jpg" alt=""></div>
+                        <div class="ab"><img src="img/bali.jpg" alt=""></div>
+                        <div class="ab"><img src="img/bali.jpg" alt=""></div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="c">
+                    <div class="ab">
+                            <div class="abc"><img src="img/ferrarribleu5.jpg" alt="" !-- on peut tailler l image exceptionnellement ici on rajoute width et height ></div>
+                            <div class="abc"><img src="img/lamer.jpg" alt=""></div>
+                            <div class="abc"><img src="img/lamer.jpg" alt=""></div>
+                            <div class="abc"><img src="img/ferrarribleu5.jpg" alt=""></div>
+                       
+                    </div>
+                    <div class="ab">
+                            <div class="abc"><img src="img/ferrarribleu5.jpg" alt=""></div>
+                            <div class="abc fond_violet"><img src="img/lamer.jpg" alt=""></div>
+                            <div class="abc fond_violet"><img src="img/lamer.jpg" alt=""></div>
+                            <div class="abc"><img src="img/ferrarribleu5.jpg" alt=""></div>
+                     
+                    </div>
+                    <div class="ab">
+                            <div class="abc"><img src="img/ferrarribleu5.jpg" alt=""></div>
+                            <div class="abc"><img src="img/lamer.jpg" alt=""></div>
+                            <div class="abc"><img src="img/lamer.jpg" alt=""></div>
+                            <div class="abc"><img src="img/ferrarribleu5.jpg" alt=""></div>
+                      
+                    </div>
+                    <div class="ab">
+                            <div class="abc"><img src="img/ferrarribleu5.jpg" alt=""></div>
+                            <div class="abc"><img src="img/lamer.jpg" alt=""></div>
+                            <div class="abc"><img src="img/lamer.jpg" alt=""></div>
+                            <div class="abc"><img src="img/ferrarribleu5.jpg" alt=""></div>
+                        
+                    </div>
+                    <div class="clear"></div>
+            </div>
+                    <div class="d">
+                            <div class="da"><img src="img/gamak.jpg" alt=""></div>
+                            <div class="da"><img src="img/gamak.jpg" alt=""></div>
+                            <div class="da"><img src="img/gamak.jpg" alt=""></div>
+                            <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+        </section>
+        <footer>Zone du bas</footer>
+    
+    </div>
+    
+</body>
+</html>
