@@ -1,9 +1,12 @@
 @charset "utf-8";
 /* CSS document */
 body {
-    background: rgb(235, 116, 116);
-
+    background: rgb(216, 89, 248);
+    font-family: sans-serif; /* sans serif ou sans empattements ou tipo baton */
+    font-size: 1.3em;
+/* les couleurs de fond pour voir des div */
 }
+
 .couleur_une {
     background: rgb(34, 34, 250);
 }
@@ -11,5 +14,61 @@ body {
     background: rgb(187, 245, 72);
 }
 .change {
-    border: 2px solid wheat;
+    border: 1px thin wheat;
+}
+/* changement des ul en tableaux */
+ul {
+    list-style: none;/*  suppression des puces des listes */
+    float: left; /* effet flottant a gauche */
+    margin: 0;/*  marge exterieur */
+    padding: 0; /* marge interieur */
+}
+.gauche, .droite { /* tous les li de la list ul ayant la class change elle-meme enfant de la class droite */
+    margin-top: 5em; /* une marge haut pour les deux classes gauche et droite */
+}
+/* pour faire la première colonne du tableau */
+.gauche ul {
+    margin: 3.2em 0 0 0; /* la ul qui dans la div gauche */
+}
+/* tous les li de la ul ayant la class gauche */
+.gauche ul li {
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    padding: 1em;
+    width: 10em;
+
+}
+/* premier li en ul ayant la class gauche */
+
+.gauche ul li:first-child {
+    border-top: 2px solid #ccc;
+}
+ul.list li { /* tous les li de la ul ayant la class list */
+    border-left: 1px solid #ccc;
+}
+.droite .change ul li {
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    padding: 1em;
+    width: 10em;
+    text-align: center;
+
+}
+.droite .change ul li:last-child { /* le dernier li de la ul ayant la class .change elle-meme enfent de la class droite */
+    border-bottom: 1px solid #ccc;
+}
+.clear {
+    clear: both;
+}
+/* parametrage des animations CSS les effets de la transitionau survol de la souris  */
+.droite .change ul:hover {
+    background: linear-gradient(lawngreen, #ccc);
+    cursor: crosshair; /* changement de l'affichage du curseur */
+    transform: scale( 1.2); /* echelle de zoom */
+    transition-duration: 2s;
+}
+.droite .change ul:hover li:first-child {/* au survol de la souris on selectionne le premier li de la ul ayant la class.change, elle-meme enfant de la class .droite */
+    background-color:#333;
+    color: azure;
+
 }
